@@ -98,6 +98,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyVelocity: 5
   killDistance: 1.20000005
+  rewardPoints: 40
+  rewardGauge: 150
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

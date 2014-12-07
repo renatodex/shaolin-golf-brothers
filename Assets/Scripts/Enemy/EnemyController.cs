@@ -5,6 +5,8 @@ public class EnemyController : MonoBehaviour {
 	public float enemyVelocity;
 	private GameObject target;
 	public float killDistance;
+	public int rewardPoints;
+	public int rewardGauge;
 
 	// Use this for initialization
 	public void Start () {
