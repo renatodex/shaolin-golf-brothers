@@ -28,6 +28,7 @@ public class AttackController : MonoBehaviour {
 			RaycastHit2D hit = Physics2D.Linecast(transform.position, attackLine, 1 << LayerMask.NameToLayer("Enemy"));
 			if(hit) {
 				Destroy(hit.transform.gameObject);
+				GetComponent<PointsController>().AddPoints(100);
 			}
 		}
 	}
