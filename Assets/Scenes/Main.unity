@@ -325,6 +325,7 @@ GameObject:
   - 61: {fileID: 1755544956}
   - 114: {fileID: 1755544961}
   - 114: {fileID: 1755544960}
+  - 114: {fileID: 1755544962}
   m_Layer: 0
   m_Name: Tofu
   m_TagString: Untagged
@@ -421,6 +422,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bd209967e6194b129f9f5e0a2a3d7e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1755544962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1755544954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db5df5c98910c4e0688c407508304634, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpKey: 32
+  jumpForce: {x: 0, y: 750}
 --- !u!1 &1998256941
 GameObject:
   m_ObjectHideFlags: 0
