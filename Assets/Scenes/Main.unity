@@ -747,6 +747,14 @@ Prefab:
       propertyPath: m_CollisionDetection
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0ecc336e450984de8b68a0639817ca24, type: 2}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0ecc336e450984de8b68a0639817ca24, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0ecc336e450984de8b68a0639817ca24, type: 2}
   m_RootGameObject: {fileID: 1755544954}
@@ -913,9 +921,9 @@ GameObject:
   - 61: {fileID: 1755544956}
   - 114: {fileID: 1755544964}
   - 114: {fileID: 1755544965}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
