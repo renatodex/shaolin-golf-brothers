@@ -13,13 +13,13 @@ public class JumpController : MonoBehaviour {
 	
 	// Update is called once per frame
 	public void FixedUpdate () {
+		Debug.DrawRay(transform.position, Vector3.down*2f, Color.blue, 1);
 		if(Input.GetKeyDown(this.jumpKey) && this.isGrounded()){ 
 			this.rigidbody2D.AddForce(this.jumpForce);
 		}
 	}
 
 	private bool isGrounded() {
-		Debug.DrawRay(transform.position, Vector3.down*2f, Color.blue, 1);
 		if (Physics2D.Raycast(transform.position, Vector3.down, 2f, 1 << LayerMask.NameToLayer("Ground"))) {
 			return true;
 		} else {

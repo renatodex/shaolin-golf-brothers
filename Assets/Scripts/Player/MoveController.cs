@@ -4,6 +4,7 @@ using System.Collections;
 public class MoveController : MonoBehaviour
 {
 	public float maxSpeed, baseSpeed;
+	public bool allowToMove;
 
 	void Start(){
 		this.baseSpeed = this.maxSpeed;
@@ -11,8 +12,11 @@ public class MoveController : MonoBehaviour
 	
 	void FixedUpdate() {
 		float move = Input.GetAxis("Horizontal");	
-		updateSpeed(move);
-		updateDirection(move);
+
+		if(this.allowToMove) {
+			this.updateSpeed(move);
+			this.updateDirection(move);
+		}
 	}
 	
 		
