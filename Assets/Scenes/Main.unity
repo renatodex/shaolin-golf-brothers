@@ -227,7 +227,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1086146339}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.60145569, z: -6.1878233}
+  m_LocalPosition: {x: 0, y: -2.37330818, z: -6.1878233}
   m_LocalScale: {x: 17.0356255, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -324,7 +324,7 @@ GameObject:
   - 50: {fileID: 1755544959}
   - 61: {fileID: 1755544956}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: Tofu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -368,7 +368,7 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1755544954}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &1755544958
 Transform:
   m_ObjectHideFlags: 0
@@ -376,8 +376,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1755544954}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.46892357, y: 7.84761, z: 9.43579102}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -4.4282999, y: -.27204603, z: 9.43579102}
+  m_LocalScale: {x: 1.16250002, y: 3.08437467, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!50 &1755544959
