@@ -4,20 +4,20 @@ using System.Collections;
 public class SpawnerController : MonoBehaviour {
 
 	public GameObject enemy1;
-	public float enemyVelocity;
+	public float spawnerRateMinium;
+	public float spawnerRateMaximum;
+
 
 	// Use this for initialization
 	public void Start () {
-		//StartCoroutine("spawner");
-		Invoke("enemy1Spawn", 0.5f);
+		StartCoroutine("spawner");
+		//Invoke("enemy1Spawn", 0.5f);
 	}
 
 	IEnumerator spawner() {
 		while(true) {
-			yield return new WaitForSeconds(Random.Range(0f, 4f));
-
+			yield return new WaitForSeconds(Random.Range(this.spawnerRateMinium, this.spawnerRateMaximum));
 			this.spawnEnemy(this.enemy1);
-
 			yield return null;
 		}
 	}

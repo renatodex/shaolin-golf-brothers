@@ -5,7 +5,6 @@ public class AttackController : MonoBehaviour {
 
 	public KeyCode attackKey;
 	public float attackDistance;
-	private RaycastHit hit;
 
 
 	// Use this for initialization
@@ -21,13 +20,14 @@ public class AttackController : MonoBehaviour {
 			if(GetComponent<MoveController>().direction == "right") {
 				attackLine.x += this.attackDistance;
 				Debug.DrawLine(this.transform.position, attackLine, Color.red, 0.2f);
-//				if(Physics.Raycast(transform.position, attackLine, out this.hit, 1 << LayerMask.NameToLayer("Enemy"))) {
-//					Destroy(hit.transform.gameObject);
-//				}
-
 			} else {
 				attackLine.x -= this.attackDistance;
 				Debug.DrawLine(this.transform.position, attackLine, Color.red, 0.2f);
+			}
+
+			RaycastHit2D hit = Physics2D.Linecast(transform.position, attackLine, 1 << LayerMask.NameToLayer("Enemy"));
+			if(hit) {
+				Destroy(hit.transform.gameObject);
 			}
 		}
 	}

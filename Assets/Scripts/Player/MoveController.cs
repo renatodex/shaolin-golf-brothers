@@ -7,11 +7,11 @@ public class MoveController : MonoBehaviour
 	public bool allowToMove;
 	public string direction;
 
-	void Start(){
+	public void Start(){
 		this.baseSpeed = this.maxSpeed;
 	}
 	
-	void Update() {
+	public void Update() {
 		float move = Input.GetAxis("Horizontal");	
 
 		if(this.allowToMove) {
@@ -19,28 +19,27 @@ public class MoveController : MonoBehaviour
 			this.updateDirection(move);
 		}
 	}
-	
-		
-	void updateSpeed(float move) {
+
+	private void updateSpeed(float move) {
 		rigidbody2D.velocity = new Vector2 (move * maxSpeed, rigidbody2D.velocity.y);
 	}
 	
-	void updateDirection(float move) {
+	private void updateDirection(float move) {
 		if (move > 0) {
 			turnRight ();
-		} 
+		}
 		
 		if(move < 0){
 			turnLeft ();
 		}
 	}
 	
-	public void turnRight() {
+	private void turnRight() {
 		this.direction = "right";
 		turn (180);
 	}
 	
-	public void turnLeft() {
+	private void turnLeft() {
 		this.direction = "left";
 		turn (0);
 	}
