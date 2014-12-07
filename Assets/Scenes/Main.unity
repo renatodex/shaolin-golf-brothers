@@ -470,6 +470,7 @@ GameObject:
   - 114: {fileID: 1755544962}
   - 114: {fileID: 1755544963}
   - 61: {fileID: 1755544956}
+  - 114: {fileID: 1755544964}
   m_Layer: 0
   m_Name: Tofu
   m_TagString: Untagged
@@ -578,7 +579,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db5df5c98910c4e0688c407508304634, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpKey: 32
+  jumpKey: 273
   jumpForce: {x: 0, y: 750}
 --- !u!114 &1755544963
 MonoBehaviour:
@@ -594,6 +595,18 @@ MonoBehaviour:
   crouchKey: 274
   crouchingColliderSize: {x: 1, y: .5}
   crouchingColliderPosition: {x: 0, y: -.0700000003}
+--- !u!114 &1755544964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1755544954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49d0531381d37462d8f0471168311fc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackKey: 32
 --- !u!1 &1998256941
 GameObject:
   m_ObjectHideFlags: 0

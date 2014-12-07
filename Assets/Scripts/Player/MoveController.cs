@@ -5,6 +5,7 @@ public class MoveController : MonoBehaviour
 {
 	public float maxSpeed, baseSpeed;
 	public bool allowToMove;
+	public string direction;
 
 	void Start(){
 		this.baseSpeed = this.maxSpeed;
@@ -35,10 +36,12 @@ public class MoveController : MonoBehaviour
 	}
 	
 	public void turnRight() {
+		this.direction = "right";
 		turn (180);
 	}
 	
 	public void turnLeft() {
+		this.direction = "left";
 		turn (0);
 	}
 	
