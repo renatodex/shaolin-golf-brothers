@@ -11,7 +11,7 @@ public class MoveController : MonoBehaviour
 		this.baseSpeed = this.maxSpeed;
 	}
 	
-	void FixedUpdate() {
+	void Update() {
 		float move = Input.GetAxis("Horizontal");	
 
 		if(this.allowToMove) {
