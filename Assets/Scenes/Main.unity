@@ -910,6 +910,7 @@ GameObject:
   - 114: {fileID: 1755544964}
   - 114: {fileID: 1755544965}
   - 114: {fileID: 1755544966}
+  - 114: {fileID: 1755544967}
   m_Layer: 11
   m_Name: Player
   m_TagString: Player
@@ -1080,8 +1081,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ebd1368d98794d7c924df951770602f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maximumGaugeLevel: 500
+  maximumGaugeLevel: 400
   actualGaugeLevel: 0
+--- !u!114 &1755544967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1755544954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 259f1baed639a4febb814c078b889c37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  specialWordThis: {fileID: 100000, guid: 7ab8c2ad876614e8eb83f18f2e4b108e, type: 2}
+  specialWordIs: {fileID: 100000, guid: be7ef149a307b425d8c6184bde91103a, type: 2}
+  specialWordGolf: {fileID: 100000, guid: 0d61adeaf84bb44f98ed7b281fb07768, type: 2}
 --- !u!1 &1799790916
 GameObject:
   m_ObjectHideFlags: 0

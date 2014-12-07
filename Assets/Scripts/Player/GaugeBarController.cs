@@ -9,9 +9,25 @@ public class GaugeBarController : MonoBehaviour {
 	public void AddGaugeBar(int value) {
 		if(this.actualGaugeLevel+value < this.maximumGaugeLevel) {
 			this.actualGaugeLevel += value;
-
-			GameObject gaugeBarUI = GameObject.Find ("GaugeBarUI");
-			gaugeBarUI.GetComponent<GaugeBarUIController>().updateWidthByPoints(this.actualGaugeLevel);
+		} else {
+			this.actualGaugeLevel = this.maximumGaugeLevel;
 		}
+
+		GameObject gaugeBarUI = GameObject.Find ("GaugeBarUI");
+		gaugeBarUI.GetComponent<GaugeBarUIController>().updateWidthByPoints(this.actualGaugeLevel);
+	}
+
+	public bool gaugeBarReady() {
+		if(this.actualGaugeLevel == this.maximumGaugeLevel) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	public void resetGaugeBar() {
+		this.actualGaugeLevel = 0;
+		GameObject gaugeBarUI = GameObject.Find ("GaugeBarUI");
+		gaugeBarUI.GetComponent<GaugeBarUIController>().updateWidthByPoints(0f);
 	}
 }
