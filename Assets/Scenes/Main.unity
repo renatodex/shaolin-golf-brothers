@@ -296,6 +296,32 @@ MonoBehaviour:
   mMaxLineHeight: 0
   mLineWidth: 0
   mMultiline: 1
+--- !u!1 &174953006
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 174953007}
+  m_Layer: 0
+  m_Name: MovingPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 168350284, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &174953007
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 174953006}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.102163792, y: -.979397297, z: 20}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1350135200}
 --- !u!1001 &326591101
 Prefab:
   m_ObjectHideFlags: 0
@@ -478,7 +504,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 3f75d2e96a63c4c9d95d812e4dd13968, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -513,7 +539,7 @@ Transform:
   m_GameObject: {fileID: 1086146339}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.20843935, y: -2.37330818, z: 10}
-  m_LocalScale: {x: 32.3676567, y: 1, z: 1}
+  m_LocalScale: {x: 116.523567, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!1 &1350135195
@@ -528,6 +554,7 @@ GameObject:
   - 92: {fileID: 1350135198}
   - 124: {fileID: 1350135197}
   - 81: {fileID: 1350135196}
+  - 114: {fileID: 1350135201}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -595,11 +622,25 @@ Transform:
   m_LocalPosition: {x: -4.1537838, y: 2.32988834, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 174953007}
   - {fileID: 1352055041}
   - {fileID: 1360721390}
   - {fileID: 1799790917}
   - {fileID: 1879637176}
   m_Father: {fileID: 0}
+--- !u!114 &1350135201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1350135195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1afa78bbd10614b79a88686d70bdb3a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movingPoint: {fileID: 174953006}
+  player: {fileID: 1755544954}
 --- !u!1 &1352055040
 GameObject:
   m_ObjectHideFlags: 0
